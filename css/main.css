@@ -29,9 +29,11 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	border-bottom: 2px solid #000;
 }
 
 #hLogo {
+	display: block;
 	width: 150px;
 	height: 110px;
 	line-height: 110px;
@@ -39,9 +41,18 @@ a {
 	border: 3px solid #2db09d;
 	border-radius: 20px;
 	background-color: #2db09d;
+	color: #000;
 	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
+	transition: all .2s ease-in-out;
+}
+
+#hLogo:hover {
+	cursor: pointer;
+	border: 3px solid #000;
+	background-color: #000;
+	color: #2db09d;
 }
 
 #mainNav {
@@ -347,170 +358,149 @@ a {
 
 
 
-/*#contactUs {
-	margin-top: 160px;
-	margin-bottom: 160px;
+#contact {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: center;
+	background-color: #a5dad2;
+	width: 1200px;
+	border: 5px solid #000;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 
-#form {
+#contactForm {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	margin-left: auto;
 }
 
-#fName {
-	width: 450px;
-	height: 40px;	
-	line-height: 40px;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
+#contactForm h3 {
+	margin: 120px 0px 22px 0px;
+	letter-spacing: -1px;
+	font-size: 35px;
+	color: #000;	
+}
+
+#fname {
+	margin-bottom: 20px;
+	font-size: 16px;		
+	border: 3px solid #2db09d;
+	border-radius: 5px;
+	width: 350px;
+	padding: 10px 20px;
+}
+
+#fname:hover {
 	border: 3px solid #000;
-	background-color: #000;
 }
 
-#fName h3 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: bold;
-	color: #2db09d;
+#lname {
+	margin-bottom: 20px;
+	font-size: 16px;		
+	border: 3px solid #2db09d;
+	border-radius: 5px;
+	width: 350px;
+	padding: 10px 20px;	
 }
 
-#lName {
-	width: 450px;
-	height: 40px;	
-	line-height: 40px;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
+#lname:hover {
 	border: 3px solid #000;
-	background-color: #000;
-}
-
-#lName h3 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: bold;
-	color: #2db09d;
 }
 
 #email {
-	width: 450px;
-	height: 40px;	
-	line-height: 40px;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 3px solid #000;
-	background-color: #000;
+	margin-bottom: 20px;
+	font-size: 16px;	
+	border: 3px solid #2db09d;
+	border-radius: 5px;
+	width: 350px;
+	padding: 10px 20px;	
 }
 
-#email h3 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: bold;
-	color: #2db09d;
+#email:hover {
+	border: 3px solid #000;
 }
 
 #pwd {
-	width: 450px;
-	height: 40px;	
-	line-height: 40px;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 3px solid #000;
-	background-color: #000;
+	margin-bottom: 20px;
+	font-size: 16px;		
+	border: 3px solid #2db09d;
+	border-radius: 5px;
+	width: 350px;
+	padding: 10px 20px;	
 }
 
-#pwd h3 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: bold;
-	color: #2db09d;
+#pwd:hover {
+	border: 3px solid #000;
 }
 
 #phone {
-	width: 450px;
-	height: 40px;	
-	line-height: 40px;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	border: 3px solid #000;
-	background-color: #000;
+	margin-bottom: 20px;
+	font-size: 16px;
+	border: 3px solid #2db09d;
+	border-radius: 5px;
+	width: 350px;
+	padding: 10px 20px;	
 }
 
-#phone h3 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: bold;
-	color: #2db09d;
+#phone:hover {
+	border: 3px solid #000;
 }
 
 #comments {
-	width: 450px;
-	height: 295px;	
-	line-height: 295px;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-bottom: 20px;
+	border: 3px solid #2db09d;
+	border-radius: 5px;
+	width: 350px;
+	height: 300px;
+	padding: 10px 20px;	
+}
+
+#comments:hover {
 	border: 3px solid #000;
-	background-color: #000;
 }
 
-#comments h3 {
-	font-size: 30px;
+textarea {
+	resize: none;
+}
+
+#submitBtn {
+	margin: 0px 0px 120px 0px;
+	display: block;
+	width: 150px;
+	background-color: #6f8208;
+	color: #fff;
 	text-align: center;
+	font-size: 19px;
 	font-weight: bold;
-	color: #2db09d;
+	border: 1px solid #6f8208;
+	border-radius: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: all .2s ease-in-out;
 }
 
-#cButton {
-	width: 200px;
-	height: 72px;	
-	line-height: 72px;
-	margin-top: 22px;
-	margin-left: 22px;
-	border: 3px solid #2db09d;
-	border-radius: 20px;
-	background-color: #2db09d;
-}
-
-#cButton h4 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: bold;
+#submitBtn:hover {
+	border: 1px solid #bcc783;
+	cursor: pointer;
+	background-color: #bcc783;
 	color: #000;
 }
 
-#cAddress {
+#googleMap {
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	margin-right: auto;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 120px;
+	margin-bottom: 120px;
+	height: 695px;
+	border: 5px solid #2db09d;
+	border-radius: 5px;
 }
-
-#cAddresses {
-	width: 450px;
-	height: 700px;	
-	line-height: 700px;
-	margin-top: 15px;
-	margin-left: 50px;
-	margin-right: auto;
-	border: 3px solid #2db09d;
-}
-
-#cAddress h3 {
-	font-size: 30px;
-	text-align: center;
-	font-weight: bold;
-	color: #000;
-}*/
 
 
 
@@ -523,11 +513,13 @@ a {
 	background-color: #2db09d;
 	margin: 0 auto;
 	display: flex;
+	border-top: 2px solid #000;
 	flex-direction: row;
 	justify-content: space-evenly;	
 }
 
 #fLogo {
+	display: block;
 	width: 220px;
 	height: 160px;
 	line-height: 160px;
@@ -539,17 +531,26 @@ a {
 	font-size: 40px;
 	text-align: center;
 	font-weight: bold;
+	transition: all .2s ease-in-out;
+}
+
+#fLogo:hover {
+	cursor: pointer;
+	background-color: #007261;
+	color: #fff;
 }
 
 #footer p {
 	text-align: justify;
-	line-height: 1.5;
+	line-height: 1.8;
+	letter-spacing: 1px;
 	font-size: 24px;
+	font-weight: bold;
 	color: #000;
 }
 
 #mediaIcons {
-	margin: 60px 0px 60px 0px;
+	margin: 50px 0px 60px 0px;
 }
 
 #mediaIcons ul li {
