@@ -2,36 +2,67 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>THICK'R LAWN</title>
+		<title>Contact Us | THICK'R LAWN</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 		<link href="css/reset.css" rel="stylesheet" type="text/css">
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-	<h1 class="hidden">THICK'R LAWN</h1>
+	<h1 class="hidden">Contact Us | THICK'R LAWN</h1>
 		<!-- Content Goes Here -->
 
 		<div id="container">
 
 			<header id="header">
 			<h2 class="hidden">Header</h2>
-				<h3 id="hLogo">LOGO</h3>
+				<a href="index.html" id="hLogo">LOGO</a>
 				<nav id="mainNav">
-				<h2 class="hidden">Main Navigation</h2>
+				<h3 class="hidden">Main Navigation</h3>
 					<ul>
 						<li><a href="#">PRODUCTS</a></li>
 						<li><a href="#">PROMOTIONS</a></li>
 						<li><a href="#">ABOUT US</a></li>
-						<li><a href="#">CONTACT US</a></li>
+						<li><a href="contact.html">CONTACT US</a></li>
 					</ul>
 				</nav>
 			</header>
 
 			<main>
 
-				<section>
-					
+				<section id="contact">
+				<h2 class="hidden">Contact Section</h2>
+					<section id="contactForm">
+					<h3>Send us a message!</h3>
+						<form action="form.php" method="post">
+							<ul>
+								<li>
+									<input type="text" required id="fname" name="firstName" placeholder="First Name">
+								</li>
+								<li>
+									<input type="text" required id="lname" name="lastName" placeholder="Last Name">
+								</li>
+								<li>
+									<input type="email" required id="email" placeholder="Email Address">
+								</li>
+								<li>
+									<input type="password" required id="pwd" placeholder="Password">
+								</li>
+								<li>
+									<input type="tel" required id="phone" placeholder="Phone Number">
+								</li>
+								<li>
+									<textarea id="comments" required></textarea><br>
+									<input type="submit" value="SUBMIT" id="submitBtn">
+								</li>
+							</ul>							
+						</form>	
+					</section>
+					<section id="googleMap">
+					<h3 class="hidden">Google Map</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.144266187682!2d-81.21975484897533!3d43.01735050122834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882eeda4bdd7752f%3A0xc896f420662788de!2s1299%20Huron%20St%2C%20London%2C%20ON%20N5Y%204M1!5e0!3m2!1sen!2sca!4v1613162745280!5m2!1sen!2sca" width="600" height="695" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+						</iframe>
+					</section>
 				</section>				
 
 			</main>
@@ -39,33 +70,32 @@
 			<footer id="footer">
 			<h2 class="hidden">Footer</h2>
 				<section>
-					<h3 id="fLogo">LOGO</h3>
+				<h3 class="hidden">Services</h3>
+					<a href="index.html" id="fLogo">LOGO</a>
 					<p>
-						•ㅤ123-456-7890<br>
-						•ㅤ1234 Somewhere St.<br>
-						•ㅤ1234 Evica St.<br>
-						•ㅤ1234 Mai St.<br>
+						•ㅤ1299 Huron St. London Ont. N5Y 4M1<br>
+						•ㅤTEL: 300-000-0000<br>
+						•ㅤFAX: 300-000-0000<br>
+						•ㅤnaeugene0721@gmail.com<br>
 					</p>
 					<nav id="mediaIcons">
 					<h3 class="hidden">Social Media Icons</h3>
 						<ul>
-							<li><a href="#" id="fb">F</a></li>
-							<li><a href="#" id="in">I</a></li>
-							<li><a href="#" id="tw">T</a></li>
+							<li><a href="https://www.facebook.com/" id="fb">F</a></li>
+							<li><a href="https://www.instagram.com/" id="in">I</a></li>
+							<li><a href="https://twitter.com/" id="tw">T</a></li>
 						</ul>
 					</nav>
 				</section>
-				<section>
+				<nav id="footerNav">
 				<h3 class="hidden">Footer Navigation</h3>
-					<nav id="footerNav">
-						<ul>
-							<li><a href="#">PRODUCTS</a></li>
-							<li><a href="#">PROMOTIONS</a></li>
-							<li><a href="#">ABOUT US</a></li>
-							<li><a href="#">CONTACT US</a></li>
-						</ul>
-					</nav>
-				</section>
+					<ul>
+						<li><a href="#">PRODUCTS</a></li>
+						<li><a href="#">PROMOTIONS</a></li>
+						<li><a href="#">ABOUT US</a></li>
+						<li><a href="contact.html">CONTACT US</a></li>
+					</ul>
+				</nav>
 			</footer>
 
 			<section id="bottomBr">
