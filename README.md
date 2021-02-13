@@ -4,7 +4,7 @@ This is a mid-term project based on completeing a basic business website (beer w
 
 ### Prerequisistes
 
-All you need is a ref="https://www.sublimetext.com/3">Sublime Text 3</a> or <a ref="https://atom.io">Atom.io</a> to use
+All you need is <a ref="https://www.sublimetext.com/3">Sublime Text 3</a> or <a ref="https://atom.io">Atom.io</a> to use
 
 ### Usage
 Clone the project, <code>cd</code> to your directory/download and open the folder from the software you have chosen: Sublime Text 3 or Atom.io
